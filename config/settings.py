@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4%3ck!f0ng#iot%2j2t3qv$^wccn=!+qzmltwca5rji#g=!clw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = ['unikobazar.com', 'www.unikobazar.com']
@@ -67,7 +67,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             BASE_DIR / 'templates',  # Custom templates directory
-            BASE_DIR / 'Pages' / 'templates'  # Templates directory for the Pages app
+            # BASE_DIR / 'Pages' / 'templates'  # Templates directory for the Pages app
         ],
         'APP_DIRS': True,
         'OPTIONS': {
