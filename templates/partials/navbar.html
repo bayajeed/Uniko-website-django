@@ -15,7 +15,7 @@
           <li><a href="{% url 'home' %}" class="active">Home</a></li>
           <li class="dropdown"><a href="{% url 'about' %}"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="team.html">Team</a></li>
+              <li><a href="{% url 'about' %}">Team</a></li>
               <li><a href="testimonials.html">Testimonials</a></li>
               <li class="dropdown"><a href="#"><span>Uniko Power</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -31,9 +31,9 @@
           </li>
           <li><a href="{% url 'services' %}">Services</a></li>
           <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{% url 'ownership' %}">Owner</a></li>
+          <li><a href="{% url 'blog-products' %}">Products</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
