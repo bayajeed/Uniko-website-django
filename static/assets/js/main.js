@@ -58,6 +58,19 @@
     });
   });
 
+  // Active menu selectd
+  document.addEventListener("DOMContentLoaded", function() {
+    let current = window.location.pathname;
+    let menuItems = document.querySelectorAll("#navmenu ul li a");
+
+    menuItems.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        menuItems.forEach(l => l.classList.remove("active"));
+        link.classList.add("active");
+      }
+    });
+  });
+  
 
   /**
    * Scroll top button

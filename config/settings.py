@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-4%3ck!f0ng#iot%2j2t3qv$^wccn=!+qzmltwca5rji#g=!clw
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-# ALLOWED_HOSTS = ['unikobazar.com', 'www.unikobazar.com']
+#ALLOWED_HOSTS = ['unikobazar.com', 'www.unikobazar.com']
 
 
 # Application definition
@@ -52,6 +52,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
