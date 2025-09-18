@@ -5,7 +5,7 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="{% url 'home' %}" class="logo d-flex align-items-center">
             <span class="sitename">Uniko Power</span>
           </a>
           <div class="footer-contact pt-3">
@@ -15,39 +15,39 @@
             <p><strong>Email:</strong> <span>unikopower@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/unikobazar" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/unikobazar" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/unikobazar" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/unikobazar" target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About us</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'ownership' %}">Ownership</a></li>
+            <li><a href="{% url 'blog-products' %}">blog-products</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Transformer</a></li>
-            <li><a href="#">Generator</a></li>
-            <li><a href="#">Lift</a></li>
-            <li><a href="#">Solar Panel</a></li>
-            <li><a href="#">Battery</a></li>
+            <li><a href="{% url 'services' %}">Transformer</a></li>
+            <li><a href="{% url 'services' %}">Generator</a></li>
+            <li><a href="{% url 'services' %}">Lift</a></li>
+            <li><a href="{% url 'services' %}">Solar Panel</a></li>
+            <li><a href="{% url 'services' %}">Battery</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
           <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="email-form">
+          <form action="#" method="post" class="email-form">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
@@ -61,7 +61,7 @@
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Uniko Power</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        Designed by <a href="https://unikoitsolutions.com/">Uniko IT Solutions</a> Distributed by <a href="https://unikobazar.com">Uniko Power</a>
+        Designed by <a href="https://unikobazar.com/" target="_blank">Uniko IT Solutions</a> Distributed by <a href="https://unikobazar.com" target="_blank">Uniko Power</a>
       </div>
     </div>
 
